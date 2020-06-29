@@ -8,7 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
 
     <title>myCodeOnline - My Coding Solution</title>
 </head>
@@ -65,74 +65,37 @@
     </div>
 </nav>
 
-    <div class="container d-flex justify-content-centers">
-        <div class="container my-4">
-            <div class="container marketing">
-                <!-- START THE FEATURETTES -->
-                <div class="row featurette mx-auto">
-                    <div class="col-md-7">
-                        <h2 class="featurette-heading">
-                            First featurette heading.
-                            <span class="text-muted">It'll blow your mind.</span>
-                        </h2>
-                        <p class="lead">
-                            Donec ullamcorper nulla non metus auctor fringilla. Vestibulum
-                            id ligula porta felis euismod semper. Praesent commodo cursus
-                            magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus
-                            ac cursus commodo.
-                        </p>
-                    </div>
-                    <div class="col-md-5">
-                        <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500"
-                            style="width: 500px; height: 500px;"
-                            src="https://source.unsplash.com/1600x900/?programming,c" data-holder-rendered="true" />
-                    </div>
-                </div>
-
-                <div class="row featurette mx-auto">
-                    <div class="col-md-7 order-md-2">
-                        <h2 class="featurette-heading">
-                            Oh yeah, it's that good.
-                            <span class="text-muted">See for yourself.</span>
-                        </h2>
-                        <p class="lead">
-                            Donec ullamcorper nulla non metus auctor fringilla. Vestibulum
-                            id ligula porta felis euismod semper. Praesent commodo cursus
-                            magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus
-                            ac cursus commodo.
-                        </p>
-                    </div>
-                    <div class="col-md-5 order-md-1">
-                        <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500"
-                            src="https://source.unsplash.com/1600x900/?programming,java" data-holder-rendered="true"
-                            style="width: 500px; height: 500px;" />
-                    </div>
-                </div>
-                s
-
-                <div class="row featurette mx-auto">
-                    <div class="col-md-7">
-                        <h2 class="featurette-heading">
-                            And lastly, this one. <span class="text-muted">Checkmate.</span>
-                        </h2>
-                        <p class="lead">
-                            Donec ullamcorper nulla non metus auctor fringilla. Vestibulum
-                            id ligula porta felis euismod semper. Praesent commodo cursus
-                            magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus
-                            ac cursus commodo.
-                        </p>
-                    </div>
-                    <div class="col-md-5">
-                        <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500"
-                            src="https://source.unsplash.com/1600x900/?programming,php" data-holder-rendered="true"
-                            style="width: 500px; height: 500px;" />
-                    </div>
-                </div>
-
-                <!-- /END THE FEATURETTES -->
-            </div>
-        </div>
+<!--PHP CheatSheet-->
+<div class="container">
+    <div class="alert alert-success mt-3" role="alert">
+        <h2> My Custom PHP Cheat Sheet </h2>
     </div>
+    <div class="alert alert-info" role="alert">
+        <p>
+            $servername = "localhost";<br>
+            $serverusername = "root";<br>
+            $serveruserpassword = "";<br>
+            $databasename = "FormUsingPOST";<br>
+            $connectdatabse = mysqli_connect($servername, $serverusername, $serveruserpassword, $databasename);<br>
+            //  check database connection<br>
+            if (!$connectdatabse) { //$connectdatabse returns 1. so if not seccessfull it will show error<br>
+            die("Database connection unsuccessful <br>". mysqli_connect_error($connectdatabse));<br>
+            echo "<br>";<br>
+            }<br>
+            else {<br>
+            echo "Database connection successful <br>";<br>
+            }<br>
+            //  insert into database<br>
+            $insertintodatabase = "INSERT INTO `users` (`row_name1`, `row_name2`, row_name3`, `row_name4`) VALUES ('raw_value1', 'raw_value2', 'raw_value3', 'raw_value4');";<br>
+            if(mysqli_query($connectdatabse, $insertintodatabase)){<br>
+            echo "Success <br>";<br>
+            }<br>
+            else {<br>
+            echo " Error <br>";<br>
+            }";<br>
+        </p>
+    </div>
+</div>
 
 <!--Footer-->
 <div class="container">
@@ -239,15 +202,15 @@
     </div>
 </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
 </body>

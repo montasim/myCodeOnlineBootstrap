@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="/myCodeOnlineBootstrap/index.html">myCodeOnline</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -36,8 +37,9 @@
                         Topics
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">C</a>
-                        <a class="dropdown-item" href="#">C++</a>
+                        <a class="dropdown-item" href="/myCodeOnlineBootstrap/programming.html">Programming</a>
+                        <a class="dropdown-item" href="/myCodeOnlineBootstrap/webdevelopment.html">Web Development</a>
+                        <a class="dropdown-item" href="/myCodeOnlineBootstrap/technology.html">Technology</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Support</a>
                     </div>
@@ -63,12 +65,16 @@
         </div>
     </nav>
 
+    <!--Carousel-->
     <div class="container my-3">
         <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
                 <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -84,7 +90,7 @@
                 <div class="carousel-item">
                     <img src="https://source.unsplash.com/1400x400/?programming,java" class="d-block w-100" alt="..." />
                     <div class="carousel-caption d-none d-md-block">
-                        <h2>myCodeOnline is the best coding blog</h2>
+                        <h2>myCodeOnline is my personal coding blog</h2>
                         <p>Technology, News, Development and Trends.</p>
                         <button class="btn btn-success">Programming</button>
                         <button class="btn btn-primary">Web Development</button>
@@ -96,6 +102,39 @@
                         alt="..." />
                     <div class="carousel-caption d-none d-md-block">
                         <h2>Award winning blog</h2>
+                        <p>Technology, News, Development and Trends</p>
+                        <button class="btn btn-primary">Programming</button>
+                        <button class="btn btn-danger">Web Development</button>
+                        <button class="btn btn-success">Technology</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://source.unsplash.com/1400x400/?programming,php" class="d-block w-100"
+                        alt="..." />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Welcome to myCodeOnline</h2>
+                        <p>Technology, News, Development and Trends</p>
+                        <button class="btn btn-primary">Programming</button>
+                        <button class="btn btn-danger">Web Development</button>
+                        <button class="btn btn-success">Technology</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://source.unsplash.com/1400x400/?programming,c#" class="d-block w-100"
+                        alt="..." />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Award winning blog</h2>
+                        <p>Technology, News, Development and Trends</p>
+                        <button class="btn btn-primary">Programming</button>
+                        <button class="btn btn-danger">Web Development</button>
+                        <button class="btn btn-success">Technology</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://source.unsplash.com/1400x400/?programming,javascript" class="d-block w-100"
+                         alt="..." />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>myCodeOnline is my personal coding blog</h2>
                         <p>Technology, News, Development and Trends</p>
                         <button class="btn btn-primary">Programming</button>
                         <button class="btn btn-danger">Web Development</button>
@@ -114,24 +153,26 @@
         </div>
     </div>
 
-    <div class="container">
+    <!-- All Cheat Sheet -->
+    <div class="cointainer">
         <div class="album py-5 bg-light">
             <div class="container">
+
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card mb-4 shadow-sm">
-                            <img class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                src="https://source.unsplash.com/1600x900/?programming,php" alt="" />
+                            <img src="https://source.unsplash.com/1600x900/?programming,php" class="d-block w-100" alt="...">
                             <div class="card-body">
-                                <p class="card-text text-dark">Programming Contest</p>
-                                <div class="d-flex justify-content-between align-items-center">
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <br>
+                                <div class="d-flex justify-content-center align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-primary">
-                                            View
-                                        </button>
-                                        <button type="button" class="btn btn-sm btn-outline-primary">
-                                            Join
-                                        </button>
+                                        <button type="button" class="btn btn-sm btn-outline-danger"
+                                                onclick="window.location.href='/myCodeOnlineBootstrap/phpcheatsheet.html';">View Item</button>
+                                        <button type="button" class="btn btn-sm btn-outline-success mx-3"
+                                                onclick="window.location.href='/myCodeOnlineBootstrap/phpcheatsheet.html';">Cheat Sheet</button>
                                     </div>
                                     <small class="text-muted">9 mins</small>
                                 </div>
@@ -140,18 +181,18 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card mb-4 shadow-sm">
-                            <img class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                src="https://source.unsplash.com/1600x900/?programming,JavaScript" alt="" />
+                            <img src="https://source.unsplash.com/1600x900/?programming,c" class="d-block w-100" alt="...">
                             <div class="card-body">
-                                <p class="card-text text-dark">Programming Contest</p>
-                                <div class="d-flex justify-content-between align-items-center">
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <br>
+                                <div class="d-flex justify-content-center align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">
-                                            View
-                                        </button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">
-                                            Join
-                                        </button>
+                                        <button type="button" class="btn btn-sm btn-outline-danger"
+                                                onclick="window.location.href='viewcar.html';">View Item</button>
+                                        <button type="button" class="btn btn-sm btn-outline-success mx-3"
+                                                onclick="window.location.href='checkout.html';">Cheat Sheet</button>
                                     </div>
                                     <small class="text-muted">9 mins</small>
                                 </div>
@@ -160,18 +201,18 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card mb-4 shadow-sm">
-                            <img class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                src="https://source.unsplash.com/1600x900/?programming,c++" alt="" />
+                            <img src="https://source.unsplash.com/1600x900/?programming,python" class="d-block w-100" alt="...">
                             <div class="card-body">
-                                <p class="card-text text-dark">Programming Contest</p>
-                                <div class="d-flex justify-content-between align-items-center">
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <br>
+                                <div class="d-flex justify-content-center align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-success">
-                                            View
-                                        </button>
-                                        <button type="button" class="btn btn-sm btn-outline-success">
-                                            Join
-                                        </button>
+                                        <button type="button" class="btn btn-sm btn-outline-danger"
+                                                onclick="window.location.href='viewcar.html';">View Item</button>
+                                        <button type="button" class="btn btn-sm btn-outline-success mx-3"
+                                                onclick="window.location.href='checkout.html';">Cheat Sheet</button>
                                     </div>
                                     <small class="text-muted">9 mins</small>
                                 </div>
@@ -181,18 +222,18 @@
 
                     <div class="col-md-4">
                         <div class="card mb-4 shadow-sm">
-                            <img class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                src="https://source.unsplash.com/1600x900/?nature,html" alt="" />
+                            <img src="https://source.unsplash.com/1600x900/?programming,c++" class="d-block w-100" alt="...">
                             <div class="card-body">
-                                <p class="card-text text-dark">Programming Contest</p>
-                                <div class="d-flex justify-content-between align-items-center">
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <br>
+                                <div class="d-flex justify-content-center align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-danger">
-                                            View
-                                        </button>
-                                        <button type="button" class="btn btn-sm btn-outline-danger">
-                                            Join
-                                        </button>
+                                        <button type="button" class="btn btn-sm btn-outline-danger"
+                                                onclick="window.location.href='viewcar.html';">View Item</button>
+                                        <button type="button" class="btn btn-sm btn-outline-success mx-3"
+                                                onclick="window.location.href='checkout.html';">Cheat Sheet</button>
                                     </div>
                                     <small class="text-muted">9 mins</small>
                                 </div>
@@ -201,18 +242,18 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card mb-4 shadow-sm">
-                            <img class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                src="https://source.unsplash.com/1600x900/?programming,c#" alt="" />
+                            <img src="https://source.unsplash.com/1600x900/?programming,html" class="d-block w-100" alt="...">
                             <div class="card-body">
-                                <p class="card-text text-dark">Programming Contest</p>
-                                <div class="d-flex justify-content-between align-items-center">
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <br>
+                                <div class="d-flex justify-content-center align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-warning">
-                                            View
-                                        </button>
-                                        <button type="button" class="btn btn-sm btn-outline-warning">
-                                            Join
-                                        </button>
+                                        <button type="button" class="btn btn-sm btn-outline-danger"
+                                                onclick="window.location.href='viewcar.html';">View Item</button>
+                                        <button type="button" class="btn btn-sm btn-outline-success mx-3"
+                                                onclick="window.location.href='checkout.html';">Cheat Sheet</button>
                                     </div>
                                     <small class="text-muted">9 mins</small>
                                 </div>
@@ -221,18 +262,78 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card mb-4 shadow-sm">
-                            <img class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                src="https://source.unsplash.com/1600x900/?programming,.net" alt="" />
+                            <img src="https://source.unsplash.com/1600x900/?programming,css" class="d-block w-100" alt="...">
                             <div class="card-body">
-                                <p class="card-text text-dark">Programming Contest</p>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <br>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-danger"
+                                                onclick="window.location.href='viewcar.html';">View Item</button>
+                                        <button type="button" class="btn btn-sm btn-outline-success mx-3"
+                                                onclick="window.location.href='checkout.html';">Cheat Sheet</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="https://source.unsplash.com/1600x900/?programming,javascript" class="d-block w-100" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <br>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-danger"
+                                                onclick="window.location.href='viewcar.html';">View Item</button>
+                                        <button type="button" class="btn btn-sm btn-outline-success mx-3"
+                                                onclick="window.location.href='checkout.html';">Cheat Sheet</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="https://source.unsplash.com/1600x900/?programming,java" class="d-block w-100" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <br>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-danger"
+                                                onclick="window.location.href='viewcar.html';">View Item</button>
+                                        <button type="button" class="btn btn-sm btn-outline-success mx-3"
+                                                onclick="window.location.href='checkout.html';">Cheat Sheet</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="https://source.unsplash.com/1600x900/?programming,c#" class="d-block w-100" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to
+                                    additional content. This content is a little bit longer.</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-info">
-                                            View
-                                        </button>
-                                        <button type="button" class="btn btn-sm btn-outline-info">
-                                            Join
-                                        </button>
+                                        <button type="button" class="btn btn-sm btn-outline-danger"
+                                                onclick="window.location.href='viewcar.html';">View Item</button>
+                                        <button type="button" class="btn btn-sm btn-outline-success mx-3"
+                                                onclick="window.location.href='checkout.html';">Cheat Sheet</button>
                                     </div>
                                     <small class="text-muted">9 mins</small>
                                 </div>
@@ -244,13 +345,21 @@
         </div>
     </div>
 
+
+    <!--Footer-->
     <div class="container">
         <footer class="my-5 pt-5 text-muted text-center text-small">
-            <p class="mb-1">© 2020 myCodeOnline</p>
+            <p class="mb-1">© 2020 <a href="https://montasimmamun.github.io/myCodeOnlineBootstrap/index.html"> myCodeOnline </a> </p>
+            <p class="mb-1">Created by <a href="https://montasimcv.000webhostapp.com/">Montasim</a> </p>
             <ul class="list-inline">
-                <li class="list-inline-item"><a href="#">Privacy</a></li>
-                <li class="list-inline-item"><a href="#">Terms</a></li>
-                <li class="list-inline-item"><a href="#">Support</a></li>
+                <li class="list-inline-item"><a href="https://github.com/montasimmamun/myCodeOnlineBootstrap/blob/master/README.md">Privacy |</a></li>
+                <li class="list-inline-item"><a href="https://github.com/montasimmamun/myCodeOnlineBootstrap/blob/master/README.md">| Terms |</a></li>
+                <li class="list-inline-item"><a href="https://github.com/montasimmamun/myCodeOnlineBootstrap/blob/master/README.md">| Support </a></li>
+                <div>
+                    <p class="float-right">
+                        <a href="#">Back to top</a>
+                    </p>
+                </div>
             </ul>
         </footer>
     </div>
